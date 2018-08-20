@@ -12,12 +12,9 @@
       <vui-button type="primary" @click="testClick()">主要按钮 Normal</vui-button>
       <vui-button type="primary" is-loading>Loading</vui-button>
       <vui-button type="primary" disabled>Disabled</vui-button>
-
       <vui-button type="default">次要按钮</vui-button>
-
       <vui-button type="warn">警告类按钮</vui-button>
     </div>
-
     <div class="buttons-plain">
       <vui-button type="default" :plain="true">按钮</vui-button>
       <vui-button type="default" :plain="true" disabled>按钮</vui-button>

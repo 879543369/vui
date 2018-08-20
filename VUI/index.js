@@ -23,20 +23,16 @@ import DatetimePicker from './components/datetime-picker/datetime-picker'
 import Infinite from './components/infinite/infinite'
 import './css/weui.min.css'
 
-const version = '1.5.2'
+const version = '1.0.0'
 const install = function (Vue, config = {}) {
   if (install.installed) return
-    console.log(Infinite.name)
-  const myModule = [Button,Cell,Badge,Switch,Spinner,Navbar,NavbarItem,Tabbar,TabbarItem,Checklist,Radio,Grid,GridItem,Picker
-                    ,DatetimePicker,Actionsheet,SwipeItem,Swipe,Infinite]
+  const myModule = [Button,Cell,Badge,Switch,Spinner,Navbar,NavbarItem,Tabbar,TabbarItem,Checklist,Radio,Grid,GridItem,Picker,DatetimePicker,Actionsheet,SwipeItem,Swipe,Infinite]
   for(let ls of myModule){
      Vue.component(ls.name,ls)
   }
-  // Vue.component('vui-infinite',Infinite)
   Vue.use(Lazyload, {
     loading: require('./css/loading-spin.svg'),
     attempt: 3,
-    // ...config.lazyload
   })
 
   Vue.$dialog = Vue.prototype.$dialog = Dialog

@@ -1,6 +1,6 @@
-# vue
+# vui
 
->使用weui框架编写的vue-ui库
+> A Vue.js project
 
 ## Build Setup
 

@@ -12,12 +12,11 @@
   </div>
 </template>
 <script type="text/javascript">
-  // import Toast from '../components/toast'
   export default {
     name : "Toast",
     methods : {
       showSuccess () {
-        this.$toast('操作成功')
+        this.$toast('操作成功!')
       },
       showError () {
         this.$toast({
@@ -29,7 +28,7 @@
       showText () {
         this.$toast({
           duration: 1000,
-          message: 'hellohellohellohellohellohellohellohellohellohellohellohello',
+          message: 'hello',
           type: 'text'
         })
       }

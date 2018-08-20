@@ -5,7 +5,7 @@
 	      <div class="title-tip f26">
 	      	Vue2.0 + WeUI 1.0 是一套集成微信原生基础样式库 和Vue组件化，实现样式和组件完全解耦，可自由拆卸组装的组件化工具，专门为微信内网页和微信小程序量身设计。
 	      </div>
-	      <div class="f26">技术栈：(vue2.5.2 + vue-router3.0.1 + vuex3.0.1 + weui1.1.2 + webpack3.6.0)</div>
+	      <div class="f26">技术栈：(vue2.5.2 + vue-router3.0.1 + vuex3.0.1 + weui1.1.2)</div>
 	    </div>
 	    <vui-grid>
 	      <vui-grid-item class="demo-grid-item" to="/button">
@@ -52,10 +52,6 @@
 	      <vui-grid-item class="demo-grid-item" to="/swipe">
 	        <img :src="thumbSmall" slot="icon">
 	        <span slot="label">Swipe</span>
-	      </vui-grid-item>
-	      <vui-grid-item class="demo-grid-item" to="/actionsheet">
-	        <img :src="thumbSmall" slot="icon">
-	        <span slot="label">Actionsheet</span>
 	      </vui-grid-item>
 	      <vui-grid-item class="demo-grid-item" to="/infinite">
 	        <img :src="thumbSmall" slot="icon">

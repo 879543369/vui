@@ -1,26 +1,25 @@
 <template>
-  <transition :name="$root.transitionName">
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
-  </transition>
+	<transition :name="$root.transitionName">
+		<keep-alive>
+			<router-view/>
+		</keep-alive>
+	</transition>
 </template>
+
 <script>
-  export default {
-    created : function(){
-      // console.log(this.$root.transitionName)
-    }
-  }
+export default {
+  name: 'App'
+}
 </script>
-<style lang="scss">
+
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   color: #2c3e50;
-  .padding40{
-    padding: 40px;text-align: left;
-  }
+  margin-top: 60px;
 }
 .slide-left-enter-active,
 .slide-left-leave-active,
